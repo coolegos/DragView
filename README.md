@@ -4,4 +4,4 @@
 <img src="art/drag_view.gif" width=275 height=488/>
 
 # Demo
-[apk](/aok/app-debug.apk)
+[apk](/apk/app-debug.apk)
