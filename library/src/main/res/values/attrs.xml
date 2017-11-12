@@ -1,0 +1,8 @@
+<resources>
+  <declare-styleable name="DragView">
+    <attr format="integer" name="column"/>
+    <attr format="float" name="ratio"/>
+    <attr format="dimension" name="vertical_padding"/>
+    <attr format="dimension" name="horizontal_padding"/>
+  </declare-styleable>
+</resources>

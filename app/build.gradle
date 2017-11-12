@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+
+android {
+  compileSdkVersion rootProject.ext.android.compileSdkVersion
+  defaultConfig {
+    applicationId "com.egos.drag.sample"
+    minSdkVersion rootProject.ext.android.minSdkVersion
+    targetSdkVersion rootProject.ext.android.targetSdkVersion
+    versionCode 1
+    versionName "1.0"
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+}
+
+dependencies {
+  implementation fileTree(dir: 'libs', include: ['*.jar'])
+  implementation rootProject.ext.appcompat_v7
+  implementation rootProject.ext.design
+  testImplementation rootProject.ext.junit
+  implementation rootProject.ext.pagerslidingtabstrip
+  androidTestImplementation rootProject.ext.runner
+  androidTestImplementation rootProject.ext.espresso_core
+  compile project(':library')
+}
